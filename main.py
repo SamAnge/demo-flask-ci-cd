@@ -1,9 +1,11 @@
+"""This module does blah blah."""
+
 from flask import Flask
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@app.route('/home')
+@APP.route('/home')
 def home():
     return 'Hello World'
 
-app.run(host='0.0.0.0', port=5000)
+APP.run(host='0.0.0.0', port=5000)
